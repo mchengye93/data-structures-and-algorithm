@@ -10,3 +10,4 @@ let checkPerm = (word1, word2) => {
 }
 
 console.log(checkPerm('abcef', 'fecba')) //True
+console.log(checkPerm('aabdc','abcd')) // False
