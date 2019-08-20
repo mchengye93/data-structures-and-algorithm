@@ -1,4 +1,4 @@
-let urlify = (word,length) => {
+let urlify = (word) => {
     let urlWord = '';
 
     for (let i = 0; i < word.length; i++) {
@@ -8,4 +8,9 @@ let urlify = (word,length) => {
             urlWord += word[i];
         }
     }
+    return urlWord;
 }
+
+//Test Case
+console.log(urlify('Mr John Smith   ') === ''
+
