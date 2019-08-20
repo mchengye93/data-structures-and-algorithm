@@ -10,5 +10,24 @@ let isUnique = (word) => {
 }
 
 //Test cases:
-isUnique("abcde"); //True
-isUnique('asadfe'); //False
+console.log(isUnique("abcde")); //True
+console.log(isUnique('asadfe')); //False
+
+//If additional space can be used
+
+let isUnique1 = (word) => {
+    let letters = {};
+
+    for (let i = 0; i < word.length; i++) {
+        if (letters[word[i]] === undefined) {
+            letters[word[i]] = 1;
+         } else {
+             return false;
+         }
+    }
+    return true;
+}
+
+//Test cases:
+console.log(isUnique1("abcde")); //True
+console.log(isUnique1('asadfe')); //False
