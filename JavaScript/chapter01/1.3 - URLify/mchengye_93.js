@@ -12,5 +12,5 @@ let urlify = (word) => {
 }
 
 //Test Case
-console.log(urlify('Mr John Smith   ') === ''
+console.log(urlify('Mr John Smith') === 'Mr%20John%20Smith'); // True
 
