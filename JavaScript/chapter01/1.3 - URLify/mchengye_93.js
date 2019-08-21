@@ -1,14 +1,14 @@
-let urlify = (word) => {
-    let urlWord = '';
+let urlify = (string) => {
+    let urlString = '';
 
-    for (let i = 0; i < word.length; i++) {
-        if (word[i]=== ' ') {
-            urlWord += '%20';
+    for (let i = 0; i < string.length; i++) {
+        if (string[i]=== ' ') {
+            urlString += '%20';
         }else {
-            urlWord += word[i];
+            urlString += string[i];
         }
     }
-    return urlWord;
+    return urlString;
 }
 
 //Test Case
