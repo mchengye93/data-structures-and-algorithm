@@ -1,5 +1,5 @@
-let isUnique = (word) => {
-    let sortedLetters = word.split("").sort();
+let isUnique = (str) => {
+    let sortedLetters = str.split("").sort();
 
     for (let i = 0; i < sortedLetters.length-1; i++) {
         if (sortedLetters[i] === sortedLetters[i+1]) {
@@ -15,12 +15,12 @@ console.log(isUnique('asadfe')); //False
 
 //If additional space can be used
 
-let isUnique1 = (word) => {
+let isUnique1 = (str) => {
     let letters = {};
 
-    for (let i = 0; i < word.length; i++) {
-        if (letters[word[i]] === undefined) {
-            letters[word[i]] = 1;
+    for (let i = 0; i < str.length; i++) {
+        if (letters[str[i]] === undefined) {
+            letters[str[i]] = 1;
          } else {
              return false;
          }
