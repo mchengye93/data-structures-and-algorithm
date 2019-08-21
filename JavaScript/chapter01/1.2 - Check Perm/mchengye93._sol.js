@@ -1,12 +1,12 @@
-let checkPerm = (word1, word2) => {
-    if (word1.length !== word2.length) {
+let checkPerm = (str1, str2) => {
+    if (str1.length !== str2.length) {
         return false;
     }
 
-    let word1Letters = word1.split('').sort().join('');
-    let word2Letters = word2.split('').sort().join('');
+    let str1Letters = str1.split('').sort().join('');
+    let str2Letters = str2.split('').sort().join('');
 
-    return word1Letters === word2Letters;
+    return str1Letters === str2Letters;
 }
 
 console.log(checkPerm('abcef', 'fecba')) //True
