@@ -6,15 +6,18 @@ let stringCompression = (string) => {
     
     for (let i = 1; i < string.length; i++) {
         let nextLetter = string[i];
+        
         if (letter !== nextLetter) {
-            compresStr += compresStr+letter+count;
+            compresStr += letter+count;
             count = 1;
             letter = nextLetter;
         } else {
             count++;
         }
+        if (i === string.length-1) {
+          compresStr += nextLetter+count;
+         }
     }
     return compresStr;
-
 
 }
