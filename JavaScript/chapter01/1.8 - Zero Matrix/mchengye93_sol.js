@@ -14,6 +14,12 @@ let zeroMatrix = (matrix) => {
 
         }
     }
-       
-    
+    return matrix;
+         
 }
+
+let matrix = [[1,1,1], [1,1,0],[1,1,1]];
+
+console.log(matrix);
+zeroMatrix(matrix);
+console.log(matrix); //[ [ 1, 1, 1 ], [ 0, 0, 0 ], [ 1, 1, 1 ] ]
