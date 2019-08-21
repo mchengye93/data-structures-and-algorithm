@@ -1,0 +1,3 @@
+let stringCompression = (string) => {
+    
+}
