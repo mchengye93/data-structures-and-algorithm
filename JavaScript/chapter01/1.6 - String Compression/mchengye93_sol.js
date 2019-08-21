@@ -21,3 +21,5 @@ let stringCompression = (string) => {
     return compresStr;
 
 }
+
+console.log(stringCompression('aabbbacddddd')); //a2b3a1c1d5
