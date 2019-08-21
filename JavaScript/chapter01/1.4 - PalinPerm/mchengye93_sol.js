@@ -1,5 +1,5 @@
-let palindromePerm = (word) => {
-    let letters = word.replace(/ /g, '');
+let palindromePerm = (string) => {
+    let letters = string.replace(/ /g, '');
  
     let letterCount = {};
 
