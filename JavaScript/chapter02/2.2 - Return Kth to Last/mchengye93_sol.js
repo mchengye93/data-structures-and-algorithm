@@ -1,11 +1,11 @@
 let nthNode = (head,n) => {
-    let n = n;
+    let count = 0;
     let nNode = head;
     let node = head;
 
-    while (n > 0) {
+    while (count < n) {
         node = node.next;
-        n--;
+        count++;
 
     }
 
