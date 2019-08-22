@@ -6,15 +6,12 @@ let deleteMiddleNode = (head) => {
     let node = head;
 
     while (aheadNode.next.next !== null) {
-        
-        if (n !== 0) {
-            node = node.next;
-        }
+        prev = middle;
         middle = middle.next;
         aheadNode = aheadNode.next.next;
         n++;
     }
     //this node is one behind middle so change it's next to skip middle
-    node.next = node.next.next;
+    prev.next = prev.next.next;
 
 }
