@@ -45,8 +45,8 @@ let node3 = new Node (1);
 node.next = node2;
 node2.next = node3;
 
-console.log(palindrome(node));
+console.log(palindrome(node)); 
 
 let node4 = new Node(4);
 node3.next =node4;
-console.log(palindrome(node));
+console.log(palindrome(node)); 
