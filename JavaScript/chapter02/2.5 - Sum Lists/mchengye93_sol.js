@@ -1,3 +1,12 @@
+class Node { 
+    // constructor 
+    constructor(data) 
+    { 
+        this.data = data; 
+        this.next = null
+    } 
+} 
+
 let sumList = (node1, node2) => {
     //reverseOrder
     let input1 = '';
