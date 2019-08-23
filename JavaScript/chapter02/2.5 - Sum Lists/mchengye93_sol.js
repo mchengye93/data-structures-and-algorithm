@@ -2,7 +2,7 @@ class Node {
     // constructor 
     constructor(data) 
     { 
-        this.data = data; 
+        this.val = data; 
         this.next = null
     } 
 } 
@@ -35,3 +35,17 @@ let sumList = (node1, node2) => {
     }
     return node;
 }
+
+let node = new Node (1);
+let node2 = new Node (2);
+let node3 = new Node(3);
+
+node.next = node2;
+node2.next = node3;
+
+let node4 = new Node(4);
+let node5 = new Node(5);
+node4.next = node5;
+
+
+console.log(sumList(node, node4));
