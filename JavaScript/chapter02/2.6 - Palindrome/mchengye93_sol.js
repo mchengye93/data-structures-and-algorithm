@@ -22,3 +22,18 @@ let reverseLinkedList = (node) => {
     return head;
 }
 
+let reverseLinkedListEqual = (node1, node2) => {
+    while (node1 !==null && node2 !== null) {
+        if (node1.val !== node2.val) {
+            return false;
+        }
+        node1 = node1.next;
+        node2 = node2.next;
+    }
+
+    if (node1 === null && node2 === null) {
+        return true;
+    }
+    return false;
+}
+
